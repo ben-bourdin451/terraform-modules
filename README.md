@@ -2,10 +2,11 @@
 
 This repository contains generic Terraform modules for cloud providers (mainly AWS) to simplify infrastructure deployments
 
-Example of how to access resources (Note the `//` following the .git to provide the path)
-```
+Example of how to access resources
+
+```hcl
 module "my_module" {
-  source = "github.com/ben-bourdin451/terraform-modules.git//path/to/module?ref=tag"
+  source = "github.com/ben-bourdin451/terraform-modules//path/to/module?ref=tag"
 }
 ```
 
