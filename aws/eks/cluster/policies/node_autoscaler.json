@@ -1,0 +1,19 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowAllWorkerNodeToBeAutoscaled",
+			"Effect": "Allow",
+			"Action": [
+				"autoscaling:DescribeAutoScalingGroups",
+				"autoscaling:DescribeAutoScalingInstances",
+				"autoscaling:DescribeTags",
+				"autoscaling:SetDesiredCapacity",
+				"autoscaling:TerminateInstanceInAutoScalingGroup",
+				"autoscaling:UpdateAutoScalingGroup",
+				"ec2:DescribeLaunchTemplateVersions"
+			],
+			"Resource": "*"
+		}
+	]
+}
